@@ -1,0 +1,136 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myIIR2
+Version: S-2021.06-SP4
+Date   : Sat Nov 19 14:07:21 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGY/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_out/Q_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myIIR2             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGY/Q_reg[1]/CK (DFFR_X1)                              0.00       0.00 r
+  REGY/Q_reg[1]/QN (DFFR_X1)                              0.06       0.06 f
+  REGY/U3/ZN (INV_X1)                                     0.05       0.12 r
+  REGY/Q[1] (REG_0)                                       0.00       0.12 r
+  MULT2/am[1] (MULT_SHAMT20_3)                            0.00       0.12 r
+  MULT2/mult_28/a[1] (MULT_SHAMT20_3_DW_mult_tc_1)        0.00       0.12 r
+  MULT2/mult_28/U1212/Z (XOR2_X1)                         0.07       0.19 r
+  MULT2/mult_28/U1035/ZN (NAND2_X1)                       0.04       0.23 f
+  MULT2/mult_28/U827/Z (BUF_X2)                           0.05       0.28 f
+  MULT2/mult_28/U1014/ZN (AOI21_X1)                       0.04       0.32 r
+  MULT2/mult_28/U900/ZN (INV_X1)                          0.03       0.35 f
+  MULT2/mult_28/U822/ZN (NAND2_X1)                        0.03       0.38 r
+  MULT2/mult_28/U659/ZN (NAND3_X1)                        0.05       0.43 f
+  MULT2/mult_28/U825/ZN (NAND2_X1)                        0.04       0.47 r
+  MULT2/mult_28/U826/ZN (NAND3_X1)                        0.04       0.50 f
+  MULT2/mult_28/U279/CO (FA_X1)                           0.09       0.60 f
+  MULT2/mult_28/U273/S (FA_X1)                            0.15       0.75 r
+  MULT2/mult_28/U817/ZN (NOR2_X1)                         0.03       0.78 f
+  MULT2/mult_28/U778/ZN (NOR2_X1)                         0.04       0.81 r
+  MULT2/mult_28/U1079/ZN (NAND2_X1)                       0.03       0.85 f
+  MULT2/mult_28/U779/ZN (OAI21_X1)                        0.07       0.91 r
+  MULT2/mult_28/U1188/ZN (AOI21_X1)                       0.04       0.95 f
+  MULT2/mult_28/U808/ZN (XNOR2_X1)                        0.07       1.02 f
+  MULT2/mult_28/product[23] (MULT_SHAMT20_3_DW_mult_tc_1)
+                                                          0.00       1.02 f
+  MULT2/mult[3] (MULT_SHAMT20_3)                          0.00       1.02 f
+  SUM1/a[3] (ADD_Nbit7_1)                                 0.00       1.02 f
+  SUM1/add_24/A[3] (ADD_Nbit7_1_DW01_add_1)               0.00       1.02 f
+  SUM1/add_24/U88/ZN (NOR2_X1)                            0.05       1.07 r
+  SUM1/add_24/U115/ZN (OAI21_X1)                          0.03       1.10 f
+  SUM1/add_24/U82/ZN (AOI21_X1)                           0.06       1.16 r
+  SUM1/add_24/U113/ZN (OAI21_X1)                          0.03       1.19 f
+  SUM1/add_24/U108/ZN (XNOR2_X1)                          0.06       1.26 f
+  SUM1/add_24/SUM[6] (ADD_Nbit7_1_DW01_add_1)             0.00       1.26 f
+  SUM1/U16/Z (MUX2_X1)                                    0.08       1.33 r
+  SUM1/U9/Z (MUX2_X1)                                     0.08       1.42 f
+  SUM1/sum[1] (ADD_Nbit7_1)                               0.00       1.42 f
+  SUB1/b[7] (SUBTRACT_Nbit14)                             0.00       1.42 f
+  SUB1/U20/ZN (INV_X1)                                    0.03       1.45 r
+  SUB1/U49/ZN (NAND2_X1)                                  0.02       1.47 f
+  SUB1/U26/ZN (NOR2_X1)                                   0.05       1.52 r
+  SUB1/U15/ZN (NAND2_X1)                                  0.04       1.56 f
+  SUB1/U28/Z (XOR2_X1)                                    0.06       1.62 r
+  SUB1/add_25/B[10] (SUBTRACT_Nbit14_DW01_add_1)          0.00       1.62 r
+  SUB1/add_25/U187/ZN (NAND2_X1)                          0.03       1.65 f
+  SUB1/add_25/U204/ZN (OAI21_X1)                          0.05       1.70 r
+  SUB1/add_25/U116/ZN (AOI21_X1)                          0.03       1.74 f
+  SUB1/add_25/U213/ZN (OAI21_X1)                          0.04       1.78 r
+  SUB1/add_25/U209/ZN (XNOR2_X1)                          0.06       1.84 r
+  SUB1/add_25/SUM[13] (SUBTRACT_Nbit14_DW01_add_1)        0.00       1.84 r
+  SUB1/U29/Z (MUX2_X1)                                    0.09       1.93 f
+  SUB1/U19/Z (BUF_X2)                                     0.05       1.98 f
+  SUB1/U74/Z (MUX2_X1)                                    0.09       2.07 r
+  SUB1/result[11] (SUBTRACT_Nbit14)                       0.00       2.07 r
+  MULT3/am[11] (MULT_SHAMT20_2)                           0.00       2.07 r
+  MULT3/mult_28/a[11] (MULT_SHAMT20_2_DW_mult_tc_1)       0.00       2.07 r
+  MULT3/mult_28/U1100/ZN (XNOR2_X1)                       0.07       2.14 r
+  MULT3/mult_28/U643/Z (BUF_X2)                           0.07       2.21 r
+  MULT3/mult_28/U1097/ZN (OAI22_X1)                       0.05       2.27 f
+  MULT3/mult_28/U301/CO (HA_X1)                           0.06       2.33 f
+  MULT3/mult_28/U292/CO (FA_X1)                           0.10       2.42 f
+  MULT3/mult_28/U735/ZN (NAND2_X1)                        0.05       2.47 r
+  MULT3/mult_28/U661/ZN (NAND3_X1)                        0.04       2.51 f
+  MULT3/mult_28/U928/ZN (NAND2_X1)                        0.03       2.54 r
+  MULT3/mult_28/U929/ZN (NAND3_X1)                        0.04       2.57 f
+  MULT3/mult_28/U273/S (FA_X1)                            0.14       2.71 r
+  MULT3/mult_28/U684/ZN (NOR2_X1)                         0.03       2.74 f
+  MULT3/mult_28/U682/ZN (NOR2_X1)                         0.04       2.78 r
+  MULT3/mult_28/U951/ZN (NAND2_X1)                        0.03       2.81 f
+  MULT3/mult_28/U779/ZN (OAI21_X1)                        0.07       2.88 r
+  MULT3/mult_28/U1182/ZN (AOI21_X1)                       0.04       2.92 f
+  MULT3/mult_28/U741/ZN (XNOR2_X1)                        0.07       3.00 r
+  MULT3/mult_28/product[22] (MULT_SHAMT20_2_DW_mult_tc_1)
+                                                          0.00       3.00 r
+  MULT3/mult[2] (MULT_SHAMT20_2)                          0.00       3.00 r
+  SUM2/a[3] (ADD_Nbit8)                                   0.00       3.00 r
+  SUM2/add_24/A[3] (ADD_Nbit8_DW01_add_1)                 0.00       3.00 r
+  SUM2/add_24/U128/ZN (NAND2_X1)                          0.04       3.04 f
+  SUM2/add_24/U139/ZN (OAI21_X1)                          0.04       3.08 r
+  SUM2/add_24/U82/ZN (AOI21_X1)                           0.03       3.11 f
+  SUM2/add_24/U132/ZN (OAI21_X1)                          0.04       3.15 r
+  SUM2/add_24/U129/ZN (XNOR2_X1)                          0.07       3.22 r
+  SUM2/add_24/SUM[7] (ADD_Nbit8_DW01_add_1)               0.00       3.22 r
+  SUM2/U16/Z (MUX2_X1)                                    0.09       3.30 f
+  SUM2/U8/ZN (INV_X1)                                     0.04       3.34 r
+  SUM2/U19/Z (MUX2_X1)                                    0.07       3.41 f
+  SUM2/sum[1] (ADD_Nbit8)                                 0.00       3.41 f
+  REG_out/D[6] (REG_2)                                    0.00       3.41 f
+  REG_out/U16/Z (MUX2_X1)                                 0.06       3.48 f
+  REG_out/Q_reg[6]/D (DFFR_X1)                            0.01       3.49 f
+  data arrival time                                                  3.49
+
+  clock MY_CLK (rise edge)                                3.60       3.60
+  clock network delay (ideal)                             0.00       3.60
+  clock uncertainty                                      -0.07       3.53
+  REG_out/Q_reg[6]/CK (DFFR_X1)                           0.00       3.53 r
+  library setup time                                     -0.04       3.49
+  data required time                                                 3.49
+  --------------------------------------------------------------------------
+  data required time                                                 3.49
+  data arrival time                                                 -3.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

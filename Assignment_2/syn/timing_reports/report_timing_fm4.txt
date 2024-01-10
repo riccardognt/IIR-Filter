@@ -1,0 +1,201 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myIIR2
+Version: S-2021.06-SP4
+Date   : Sat Nov 19 14:03:48 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGX/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_out/Q_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myIIR2             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGX/Q_reg[3]/CK (DFFR_X1)                              0.00       0.00 r
+  REGX/Q_reg[3]/Q (DFFR_X1)                               0.10       0.10 r
+  REGX/Q[3] (REG_1)                                       0.00       0.10 r
+  U2/Z (BUF_X1)                                           0.14       0.24 r
+  MULT1/am[3] (MULT_SHAMT20_4)                            0.00       0.24 r
+  MULT1/U1/Z (BUF_X1)                                     0.16       0.40 r
+  MULT1/mult_28/a[3] (MULT_SHAMT20_4_DW_mult_tc_0_DW_mult_tc_3)
+                                                          0.00       0.40 r
+  MULT1/mult_28/U437/ZN (INV_X1)                          0.07       0.47 f
+  MULT1/mult_28/U413/Z (XOR2_X2)                          0.17       0.64 r
+  MULT1/mult_28/U673/ZN (NAND2_X1)                        0.14       0.77 f
+  MULT1/mult_28/U522/ZN (OAI22_X1)                        0.09       0.86 r
+  MULT1/mult_28/U106/S (HA_X1)                            0.08       0.95 r
+  MULT1/mult_28/U105/S (FA_X1)                            0.12       1.06 f
+  MULT1/mult_28/U698/ZN (AOI222_X1)                       0.11       1.18 r
+  MULT1/mult_28/U427/ZN (INV_X1)                          0.03       1.20 f
+  MULT1/mult_28/U697/ZN (AOI222_X1)                       0.09       1.30 r
+  MULT1/mult_28/U426/ZN (INV_X1)                          0.03       1.32 f
+  MULT1/mult_28/U696/ZN (AOI222_X1)                       0.09       1.42 r
+  MULT1/mult_28/U429/ZN (INV_X1)                          0.03       1.44 f
+  MULT1/mult_28/U695/ZN (AOI222_X1)                       0.09       1.54 r
+  MULT1/mult_28/U428/ZN (INV_X1)                          0.03       1.57 f
+  MULT1/mult_28/U694/ZN (AOI222_X1)                       0.09       1.66 r
+  MULT1/mult_28/U417/ZN (INV_X1)                          0.03       1.69 f
+  MULT1/mult_28/U693/ZN (AOI222_X1)                       0.09       1.78 r
+  MULT1/mult_28/U416/ZN (INV_X1)                          0.03       1.81 f
+  MULT1/mult_28/U692/ZN (AOI222_X1)                       0.09       1.90 r
+  MULT1/mult_28/U419/ZN (INV_X1)                          0.03       1.93 f
+  MULT1/mult_28/U691/ZN (AOI222_X1)                       0.09       2.02 r
+  MULT1/mult_28/U418/ZN (INV_X1)                          0.03       2.05 f
+  MULT1/mult_28/U690/ZN (AOI222_X1)                       0.09       2.14 r
+  MULT1/mult_28/U421/ZN (INV_X1)                          0.03       2.17 f
+  MULT1/mult_28/U689/ZN (AOI222_X1)                       0.09       2.26 r
+  MULT1/mult_28/U420/ZN (INV_X1)                          0.03       2.29 f
+  MULT1/mult_28/U688/ZN (AOI222_X1)                       0.09       2.38 r
+  MULT1/mult_28/U423/ZN (INV_X1)                          0.03       2.41 f
+  MULT1/mult_28/U687/ZN (AOI222_X1)                       0.09       2.50 r
+  MULT1/mult_28/U422/ZN (INV_X1)                          0.03       2.53 f
+  MULT1/mult_28/U686/ZN (AOI222_X1)                       0.09       2.62 r
+  MULT1/mult_28/U425/ZN (INV_X1)                          0.03       2.65 f
+  MULT1/mult_28/U685/ZN (AOI222_X1)                       0.09       2.74 r
+  MULT1/mult_28/U424/ZN (INV_X1)                          0.03       2.77 f
+  MULT1/mult_28/U684/ZN (AOI222_X1)                       0.09       2.86 r
+  MULT1/mult_28/U430/ZN (INV_X1)                          0.03       2.89 f
+  MULT1/mult_28/U10/CO (FA_X1)                            0.09       2.98 f
+  MULT1/mult_28/U9/CO (FA_X1)                             0.09       3.07 f
+  MULT1/mult_28/U8/CO (FA_X1)                             0.09       3.16 f
+  MULT1/mult_28/U7/CO (FA_X1)                             0.09       3.25 f
+  MULT1/mult_28/U6/CO (FA_X1)                             0.09       3.34 f
+  MULT1/mult_28/U5/CO (FA_X1)                             0.09       3.43 f
+  MULT1/mult_28/U465/Z (XOR2_X1)                          0.07       3.50 f
+  MULT1/mult_28/U464/ZN (XNOR2_X1)                        0.07       3.57 f
+  MULT1/mult_28/product[26] (MULT_SHAMT20_4_DW_mult_tc_0_DW_mult_tc_3)
+                                                          0.00       3.57 f
+  MULT1/mult[6] (MULT_SHAMT20_4)                          0.00       3.57 f
+  SUM1/b[6] (ADD_Nbit7_1)                                 0.00       3.57 f
+  SUM1/add_24/B[6] (ADD_Nbit7_1_DW01_add_0_DW01_add_2)
+                                                          0.00       3.57 f
+  SUM1/add_24/U1_6/S (FA_X1)                              0.16       3.73 r
+  SUM1/add_24/SUM[6] (ADD_Nbit7_1_DW01_add_0_DW01_add_2)
+                                                          0.00       3.73 r
+  SUM1/U13/ZN (INV_X1)                                    0.03       3.76 f
+  SUM1/U24/ZN (OAI33_X1)                                  0.15       3.91 r
+  SUM1/U12/ZN (INV_X1)                                    0.07       3.98 f
+  SUM1/U6/ZN (NOR2_X1)                                    0.06       4.04 r
+  SUM1/sum[0] (ADD_Nbit7_1)                               0.00       4.04 r
+  SUB1/b[6] (SUBTRACT_Nbit14)                             0.00       4.04 r
+  SUB1/U17/ZN (INV_X1)                                    0.03       4.07 f
+  SUB1/U69/ZN (AND2_X1)                                   0.04       4.11 f
+  SUB1/U68/Z (XOR2_X1)                                    0.08       4.19 f
+  SUB1/add_25/B[7] (SUBTRACT_Nbit14_DW01_add_0_DW01_add_3)
+                                                          0.00       4.19 f
+  SUB1/add_25/U1_7/CO (FA_X1)                             0.10       4.29 f
+  SUB1/add_25/U1_8/CO (FA_X1)                             0.09       4.38 f
+  SUB1/add_25/U1_9/CO (FA_X1)                             0.09       4.48 f
+  SUB1/add_25/U1_10/CO (FA_X1)                            0.09       4.57 f
+  SUB1/add_25/U1_11/CO (FA_X1)                            0.09       4.66 f
+  SUB1/add_25/U1_12/CO (FA_X1)                            0.09       4.75 f
+  SUB1/add_25/U1_13/S (FA_X1)                             0.14       4.88 r
+  SUB1/add_25/SUM[13] (SUBTRACT_Nbit14_DW01_add_0_DW01_add_3)
+                                                          0.00       4.88 r
+  SUB1/U25/ZN (INV_X1)                                    0.04       4.92 f
+  SUB1/U39/ZN (OAI33_X1)                                  0.13       5.05 r
+  SUB1/U8/ZN (INV_X1)                                     0.13       5.18 f
+  SUB1/U7/ZN (NOR2_X1)                                    0.07       5.25 r
+  SUB1/U4/ZN (OR2_X1)                                     0.15       5.39 r
+  SUB1/result[1] (SUBTRACT_Nbit14)                        0.00       5.39 r
+  MULT3/am[1] (MULT_SHAMT20_2)                            0.00       5.39 r
+  MULT3/mult_28/a[1] (MULT_SHAMT20_2_DW_mult_tc_0_DW_mult_tc_4)
+                                                          0.00       5.39 r
+  MULT3/mult_28/U704/Z (XOR2_X1)                          0.11       5.51 r
+  MULT3/mult_28/U411/ZN (INV_X1)                          0.07       5.58 f
+  MULT3/mult_28/U699/ZN (NAND2_X1)                        0.12       5.70 r
+  MULT3/mult_28/U492/ZN (OAI22_X1)                        0.06       5.76 f
+  MULT3/mult_28/U108/S (HA_X1)                            0.08       5.85 f
+  MULT3/mult_28/U696/ZN (AOI222_X1)                       0.11       5.96 r
+  MULT3/mult_28/U437/ZN (INV_X1)                          0.03       5.99 f
+  MULT3/mult_28/U695/ZN (AOI222_X1)                       0.09       6.08 r
+  MULT3/mult_28/U436/ZN (INV_X1)                          0.03       6.11 f
+  MULT3/mult_28/U694/ZN (AOI222_X1)                       0.09       6.20 r
+  MULT3/mult_28/U425/ZN (INV_X1)                          0.03       6.23 f
+  MULT3/mult_28/U693/ZN (AOI222_X1)                       0.09       6.32 r
+  MULT3/mult_28/U424/ZN (INV_X1)                          0.03       6.35 f
+  MULT3/mult_28/U692/ZN (AOI222_X1)                       0.09       6.44 r
+  MULT3/mult_28/U428/ZN (INV_X1)                          0.03       6.47 f
+  MULT3/mult_28/U691/ZN (AOI222_X1)                       0.09       6.56 r
+  MULT3/mult_28/U427/ZN (INV_X1)                          0.03       6.59 f
+  MULT3/mult_28/U690/ZN (AOI222_X1)                       0.09       6.68 r
+  MULT3/mult_28/U413/ZN (INV_X1)                          0.03       6.71 f
+  MULT3/mult_28/U689/ZN (AOI222_X1)                       0.09       6.80 r
+  MULT3/mult_28/U412/ZN (INV_X1)                          0.03       6.83 f
+  MULT3/mult_28/U688/ZN (AOI222_X1)                       0.09       6.92 r
+  MULT3/mult_28/U415/ZN (INV_X1)                          0.03       6.95 f
+  MULT3/mult_28/U687/ZN (AOI222_X1)                       0.09       7.04 r
+  MULT3/mult_28/U414/ZN (INV_X1)                          0.03       7.07 f
+  MULT3/mult_28/U686/ZN (AOI222_X1)                       0.09       7.16 r
+  MULT3/mult_28/U417/ZN (INV_X1)                          0.03       7.19 f
+  MULT3/mult_28/U685/ZN (AOI222_X1)                       0.09       7.28 r
+  MULT3/mult_28/U416/ZN (INV_X1)                          0.03       7.31 f
+  MULT3/mult_28/U684/ZN (AOI222_X1)                       0.09       7.40 r
+  MULT3/mult_28/U419/ZN (INV_X1)                          0.03       7.43 f
+  MULT3/mult_28/U683/ZN (AOI222_X1)                       0.09       7.52 r
+  MULT3/mult_28/U418/ZN (INV_X1)                          0.03       7.55 f
+  MULT3/mult_28/U682/ZN (AOI222_X1)                       0.09       7.65 r
+  MULT3/mult_28/U421/ZN (INV_X1)                          0.03       7.67 f
+  MULT3/mult_28/U681/ZN (AOI222_X1)                       0.09       7.77 r
+  MULT3/mult_28/U420/ZN (INV_X1)                          0.03       7.79 f
+  MULT3/mult_28/U680/ZN (AOI222_X1)                       0.09       7.89 r
+  MULT3/mult_28/U426/ZN (INV_X1)                          0.03       7.91 f
+  MULT3/mult_28/U10/CO (FA_X1)                            0.09       8.00 f
+  MULT3/mult_28/U9/CO (FA_X1)                             0.09       8.09 f
+  MULT3/mult_28/U8/CO (FA_X1)                             0.09       8.18 f
+  MULT3/mult_28/U7/CO (FA_X1)                             0.09       8.27 f
+  MULT3/mult_28/U6/CO (FA_X1)                             0.09       8.37 f
+  MULT3/mult_28/U5/CO (FA_X1)                             0.09       8.45 f
+  MULT3/mult_28/U461/Z (XOR2_X1)                          0.07       8.52 f
+  MULT3/mult_28/U460/ZN (XNOR2_X1)                        0.07       8.59 f
+  MULT3/mult_28/product[26] (MULT_SHAMT20_2_DW_mult_tc_0_DW_mult_tc_4)
+                                                          0.00       8.59 f
+  MULT3/mult[6] (MULT_SHAMT20_2)                          0.00       8.59 f
+  SUM2/a[7] (ADD_Nbit8)                                   0.00       8.59 f
+  SUM2/add_24/A[7] (ADD_Nbit8_DW01_add_0_DW01_add_1)      0.00       8.59 f
+  SUM2/add_24/U1_7/S (FA_X1)                              0.15       8.75 r
+  SUM2/add_24/SUM[7] (ADD_Nbit8_DW01_add_0_DW01_add_1)
+                                                          0.00       8.75 r
+  SUM2/U10/ZN (INV_X1)                                    0.03       8.78 f
+  SUM2/U26/ZN (OAI33_X1)                                  0.15       8.93 r
+  SUM2/U9/ZN (INV_X1)                                     0.08       9.00 f
+  SUM2/U5/ZN (INV_X1)                                     0.07       9.07 r
+  SUM2/U17/ZN (OAI22_X1)                                  0.04       9.11 f
+  SUM2/sum[2] (ADD_Nbit8)                                 0.00       9.11 f
+  REG_out/D[7] (REG_2)                                    0.00       9.11 f
+  REG_out/U11/ZN (NAND2_X1)                               0.03       9.14 r
+  REG_out/U10/ZN (OAI21_X1)                               0.03       9.17 f
+  REG_out/Q_reg[7]/D (DFFR_X1)                            0.01       9.18 f
+  data arrival time                                                  9.18
+
+  clock MY_CLK (rise edge)                               14.00      14.00
+  clock network delay (ideal)                             0.00      14.00
+  clock uncertainty                                      -0.07      13.93
+  REG_out/Q_reg[7]/CK (DFFR_X1)                           0.00      13.93 r
+  library setup time                                     -0.04      13.89
+  data required time                                                13.89
+  --------------------------------------------------------------------------
+  data required time                                                13.89
+  data arrival time                                                 -9.18
+  --------------------------------------------------------------------------
+  slack (MET)                                                        4.70
+
+
+1

@@ -1,0 +1,5 @@
+read_verilog -netlist ../netlist/myIIR2_fm4.v
+read_saif -input ../saif/myIIR2_syn.saif -instance tb_fir_fm4/UUT -unit ns -scale 1
+create_clock -name MY_CLK -period 16.0 CLK
+report_power > ./power_reports/REPORT_POWER.txt
+quit

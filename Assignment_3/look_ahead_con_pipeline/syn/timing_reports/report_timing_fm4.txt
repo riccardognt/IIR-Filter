@@ -1,0 +1,117 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : myIIR2
+Version: S-2021.06-SP4
+Date   : Sat Nov 19 18:30:11 2022
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGb0/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_out/Q_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  myIIR2             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGb0/Q_reg[1]/CK (DFFR_X1)                             0.00       0.00 r
+  REGb0/Q_reg[1]/Q (DFFR_X1)                              0.20       0.20 r
+  REGb0/Q[1] (REGNOEN_5)                                  0.00       0.20 r
+  MULT6/am[1] (MULT_SHAMT20_0)                            0.00       0.20 r
+  MULT6/mult_28/a[1] (MULT_SHAMT20_0_DW_mult_tc_0_DW_mult_tc_4)
+                                                          0.00       0.20 r
+  MULT6/mult_28/U704/Z (XOR2_X1)                          0.11       0.31 r
+  MULT6/mult_28/U431/ZN (INV_X1)                          0.07       0.38 f
+  MULT6/mult_28/U699/ZN (NAND2_X1)                        0.12       0.50 r
+  MULT6/mult_28/U492/ZN (OAI22_X1)                        0.06       0.57 f
+  MULT6/mult_28/U108/S (HA_X1)                            0.08       0.65 f
+  MULT6/mult_28/U696/ZN (AOI222_X1)                       0.11       0.76 r
+  MULT6/mult_28/U428/ZN (INV_X1)                          0.03       0.79 f
+  MULT6/mult_28/U695/ZN (AOI222_X1)                       0.09       0.88 r
+  MULT6/mult_28/U427/ZN (INV_X1)                          0.03       0.91 f
+  MULT6/mult_28/U694/ZN (AOI222_X1)                       0.09       1.00 r
+  MULT6/mult_28/U422/ZN (INV_X1)                          0.03       1.03 f
+  MULT6/mult_28/U693/ZN (AOI222_X1)                       0.09       1.12 r
+  MULT6/mult_28/U421/ZN (INV_X1)                          0.03       1.15 f
+  MULT6/mult_28/U692/ZN (AOI222_X1)                       0.09       1.24 r
+  MULT6/mult_28/U425/ZN (INV_X1)                          0.03       1.27 f
+  MULT6/mult_28/U691/ZN (AOI222_X1)                       0.09       1.36 r
+  MULT6/mult_28/U424/ZN (INV_X1)                          0.03       1.39 f
+  MULT6/mult_28/U690/ZN (AOI222_X1)                       0.09       1.48 r
+  MULT6/mult_28/U416/ZN (INV_X1)                          0.03       1.51 f
+  MULT6/mult_28/U689/ZN (AOI222_X1)                       0.09       1.60 r
+  MULT6/mult_28/U415/ZN (INV_X1)                          0.03       1.63 f
+  MULT6/mult_28/U688/ZN (AOI222_X1)                       0.09       1.72 r
+  MULT6/mult_28/U412/ZN (INV_X1)                          0.03       1.75 f
+  MULT6/mult_28/U687/ZN (AOI222_X1)                       0.09       1.85 r
+  MULT6/mult_28/U411/ZN (INV_X1)                          0.03       1.87 f
+  MULT6/mult_28/U686/ZN (AOI222_X1)                       0.09       1.97 r
+  MULT6/mult_28/U418/ZN (INV_X1)                          0.03       1.99 f
+  MULT6/mult_28/U685/ZN (AOI222_X1)                       0.09       2.09 r
+  MULT6/mult_28/U417/ZN (INV_X1)                          0.03       2.11 f
+  MULT6/mult_28/U684/ZN (AOI222_X1)                       0.09       2.21 r
+  MULT6/mult_28/U414/ZN (INV_X1)                          0.03       2.23 f
+  MULT6/mult_28/U683/ZN (AOI222_X1)                       0.09       2.33 r
+  MULT6/mult_28/U413/ZN (INV_X1)                          0.03       2.36 f
+  MULT6/mult_28/U682/ZN (AOI222_X1)                       0.09       2.45 r
+  MULT6/mult_28/U420/ZN (INV_X1)                          0.03       2.48 f
+  MULT6/mult_28/U681/ZN (AOI222_X1)                       0.09       2.57 r
+  MULT6/mult_28/U419/ZN (INV_X1)                          0.03       2.60 f
+  MULT6/mult_28/U680/ZN (AOI222_X1)                       0.09       2.69 r
+  MULT6/mult_28/U423/ZN (INV_X1)                          0.03       2.72 f
+  MULT6/mult_28/U10/CO (FA_X1)                            0.09       2.81 f
+  MULT6/mult_28/U9/CO (FA_X1)                             0.09       2.90 f
+  MULT6/mult_28/U8/CO (FA_X1)                             0.09       2.99 f
+  MULT6/mult_28/U7/CO (FA_X1)                             0.09       3.08 f
+  MULT6/mult_28/U6/CO (FA_X1)                             0.09       3.17 f
+  MULT6/mult_28/U5/CO (FA_X1)                             0.09       3.26 f
+  MULT6/mult_28/U461/Z (XOR2_X1)                          0.07       3.33 f
+  MULT6/mult_28/U460/ZN (XNOR2_X1)                        0.07       3.40 f
+  MULT6/mult_28/product[26] (MULT_SHAMT20_0_DW_mult_tc_0_DW_mult_tc_4)
+                                                          0.00       3.40 f
+  MULT6/mult[6] (MULT_SHAMT20_0)                          0.00       3.40 f
+  SUM4/b[8] (ADD_Nbit9)                                   0.00       3.40 f
+  SUM4/add_24/B[8] (ADD_Nbit9_DW01_add_0_DW01_add_1)      0.00       3.40 f
+  SUM4/add_24/U1_8/S (FA_X1)                              0.16       3.56 r
+  SUM4/add_24/SUM[8] (ADD_Nbit9_DW01_add_0_DW01_add_1)
+                                                          0.00       3.56 r
+  SUM4/U7/ZN (INV_X1)                                     0.03       3.59 f
+  SUM4/U28/ZN (OAI33_X1)                                  0.15       3.73 r
+  SUM4/U6/ZN (INV_X1)                                     0.08       3.81 f
+  SUM4/U5/ZN (INV_X1)                                     0.07       3.89 r
+  SUM4/U19/ZN (OAI22_X1)                                  0.04       3.93 f
+  SUM4/sum[3] (ADD_Nbit9)                                 0.00       3.93 f
+  REG_out/D[7] (REG_6)                                    0.00       3.93 f
+  REG_out/U14/ZN (NAND2_X1)                               0.03       3.96 r
+  REG_out/U13/ZN (OAI21_X1)                               0.03       3.99 f
+  REG_out/Q_reg[7]/D (DFFR_X1)                            0.01       4.00 f
+  data arrival time                                                  4.00
+
+  clock MY_CLK (rise edge)                               11.00      11.00
+  clock network delay (ideal)                             0.00      11.00
+  clock uncertainty                                      -0.07      10.93
+  REG_out/Q_reg[7]/CK (DFFR_X1)                           0.00      10.93 r
+  library setup time                                     -0.04      10.89
+  data required time                                                10.89
+  --------------------------------------------------------------------------
+  data required time                                                10.89
+  data arrival time                                                 -4.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        6.89
+
+
+1
