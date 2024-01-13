@@ -1,6 +1,7 @@
 # Important Notes
 This is a team project for the course of Integrated System Architecture held in the Electronic Engineering Master's degree program of Politecnico di Torino.
 The project was not originally developed making use of GitHub, it has been uploaded by myself subsequently.
+For a better understanding of the code, the design flow and the conclusions the reader can have a look to the IIR_design.pdf report.
 Many thanks to my colleagues Othman and Roberto for their contribution to this project.
 
 # Design and implementation of an IIR Filter
